@@ -19,20 +19,20 @@
 * If you are using Mac and have Homebrew installed on your computer, then you can install using following command:
 
 ```
-brew install mariadb
+$ brew install mariadb
 ```
 * If your computer does not have Homebrew installed, then try to follow the steps in this [***link***](https://mariadb.com/kb/en/library/installing-mariadb-server-pkg-packages-on-macos/)
 
 ***3.2 Run MariaDB server***
 
 ```
-mysql.server start
+$ mysql.server start
 ```
 
 ***3.3 Begin using MariaDB***
 
 ```
-mysql -u root
+$ mysql -u root
 ```
 ***3.4 Change the root password***
 * root password need to be changed to 'admin'
