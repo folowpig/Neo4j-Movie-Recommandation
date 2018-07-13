@@ -16,26 +16,39 @@
 
 [***3.1 Install MariaDB***](https://downloads.mariadb.org/mariadb/10.3.8/)
 
-* If you are using Mac and have Homebrew installed on your computer, then you can install using following command:
+* If you are using __Windows__, then download .zip package file and unzip the package in the desired directory.
+* If you are using __Mac__ and have Homebrew installed on your computer, then you can install using following command:
 
 ```
-$ brew install mariadb
+brew install mariadb
 ```
 * If your computer does not have Homebrew installed, then try to follow the steps in this [***link***](https://mariadb.com/kb/en/library/installing-mariadb-server-pkg-packages-on-macos/)
 
 ***3.2 Run MariaDB server***
 
+* For __Windows__ users, go to directory where mysqld.exe is located and execute following command
+
 ```
-$ mysql.server start
+mysqld.exe --console
+```
+
+* For __Mac__ users, execute following command
+
+```
+mysql.server start
 ```
 
 ***3.3 Begin using MariaDB***
 
+* For __Windows__ users, go to directory where mysql.exe is located to execute following command
+
 ```
-$ mysql -u root
+mysql -u root
 ```
+
 ***3.4 Change the root password***
 * root password need to be changed to 'admin'
+
 ```sql
 mysql> FLUSH PRIVILEGES;
 mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'admin';
